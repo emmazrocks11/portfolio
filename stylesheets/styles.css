@@ -1,0 +1,80 @@
+@import url('https://fonts.cdnfonts.com/css/harlow-solid-italic');
+@import url("https://use.typekit.net/hcm1wyu.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Harlow Solid Italic", sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 300;
+}
+
+.content-container {
+    box-sizing: border-box;
+    max-width: 1270px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+/*NAVIGATION*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+    /*box-shadow: 0rem 0.5rem 0.7rem rgba(0, 0, 0, 0.07);*/
+    position: relative;
+    z-index: 1000;
+}
+    
+.navbar img {
+    display: block;
+    width: 3.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 3rem;                 
+    list-style: none;
+  }
+  
+.navbar li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.content-container-divider {
+    box-sizing: border-box;
+    max-width: 1270px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 4.5rem;
+}
+
+.nav-divider {
+    border: none;
+    border-top: 2.5px solid #F9BBBC;
+}
