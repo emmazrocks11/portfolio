@@ -3,9 +3,8 @@
 
 .hero {
     box-sizing: border-box;
-    padding: 4rem 0 5rem;
+    padding: 4rem 0 15rem;
     width: 100%;
-    background-color: white;
     text-align: center;
     position: relative;
 }
@@ -39,16 +38,18 @@
 /*FEATURED PROJECTS*/
 
 .feat-proj {
-    background-color: #A5B38E;
-    padding: 5rem 0rem;
+    /*background-color: #A5B38E;*/
+    padding: 5rem 0rem 5rem;
 }
 
 .feat-proj h2 {
     color: white;
     font-size: 2.5rem;
+    text-align: center;
     margin-bottom: 1.7rem;
 }
-  
+
+/*
 .circle-bridge {
     position: absolute;
     margin-left: 5rem;
@@ -57,34 +58,35 @@
     height: 8rem;
     border-radius: 50%;
     background-color:#567741;
-    /*background: #A5B38E;*/
+    // background: #A5B38E;
     z-index: 10;
-  }
+}
+*/
 
-  .card-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.card-flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
 
-  .proj-card {
-    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);
-    transition: 0.3s;
-    width: 22rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    background-color: white;
-  }
-  
-  .proj-card:hover {
-    box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0,0.3);
-  }
-  
-  .proj-card img {
-    width: 100%;
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
+.proj-card {
+/*box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);*/
+transition: 0.3s;
+width: 22rem;
+border-radius: 0.5rem;
+margin-bottom: 1.5rem;
+background-color: white;
+}
 
-  .card-text {
-    padding: 0.7rem 0.9rem;
-  }
+.proj-card:hover {
+box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);
+}
+
+.proj-card img {
+width: 100%;
+border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-text {
+padding: 0.7rem 0.9rem;
+}

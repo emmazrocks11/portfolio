@@ -30,6 +30,13 @@ p {
     padding: 0 5rem;
 }
 
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
 /*NAVIGATION*/
 
 .navbar {
@@ -41,8 +48,6 @@ p {
     padding-bottom: 1.5rem;
     background-color: white;
     /*box-shadow: 0rem 0.5rem 0.7rem rgba(0, 0, 0, 0.07);*/
-    position: relative;
-    z-index: 1000;
 }
     
 .navbar img {
