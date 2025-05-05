@@ -1,5 +1,4 @@
-
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 // Green background when second section reaches viewport
 gsap.to("body", {
@@ -23,7 +22,7 @@ gsap.to("body", {
     }
 });
 
-
+// NAV-DIVIDER LINE OPACITY
 gsap.to(".nav-divider", {
     scrollTrigger: {
         trigger: "section:nth-of-type(2)",
@@ -33,18 +32,19 @@ gsap.to(".nav-divider", {
         onEnter: () => {
             gsap.to(".nav-divider", {
             opacity: 0,
-            duration: 0.2
+            duration: 0.1
             });
         },
         onLeaveBack: () => {
             gsap.to(".nav-divider", {
             opacity: 1,
-            duration: 0.2
+            duration: 0.1
             });
         }
     }
 });
 
+// NAVBAR PADDING CHANGES
 gsap.to(".navbar", {
     scrollTrigger: {
         trigger: "section:nth-of-type(1)",
@@ -53,14 +53,27 @@ gsap.to(".navbar", {
         onEnter: () => {
             gsap.to(".navbar", {
             paddingTop: "0.8rem",
-            paddingBottom: "0.8rem"
+            paddingBottom: "0.8rem",
+            duration: 0.1
             });
         },
         onLeaveBack: () => {
             gsap.to(".navbar", {
             paddingTop: "1.5rem",
-            paddingBottom: "1.5rem"
+            paddingBottom: "1.5rem",
+            duration: 0.1
             });
         }
     }
 });
+
+// PROJECT CARDS Left and Right
+ScrollTrigger.create({
+    trigger: ".feat-proj",
+    start: "top top",
+    end: () => "+=" + document.querySelector(".right-cards").offsetHeight,
+    pin: ".left-header",
+    scrub: false
+});
+
+// SNAP CARDS

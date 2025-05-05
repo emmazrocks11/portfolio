@@ -1,5 +1,8 @@
 /*HERO SECTION*/
-/*#314a17*/
+/*#314a17
+
+outline: 2px solid red;
+*/
 
 .hero {
     box-sizing: border-box;
@@ -42,11 +45,28 @@
     padding: 5rem 0rem 5rem;
 }
 
+.simple-flexbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left-header {
+    width: 50%;
+    text-align: left;
+    line-height: 4.3rem;
+}
+
 .feat-proj h2 {
     color: white;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1.7rem;
+    font-size: 4rem;
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+}
+
+.feat-proj h1 {
+    color: #F9BBBC;
+    font-size: 7rem;
+    margin-left: 4.5rem;
 }
 
 /*
@@ -63,30 +83,35 @@
 }
 */
 
-.card-flex {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+.right-cards {
+    margin-top: 10rem;
+    width: 50%;
+    overflow-y: hidden;
+    align-content: center;
 }
 
 .proj-card {
-/*box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);*/
-transition: 0.3s;
-width: 22rem;
-border-radius: 0.5rem;
-margin-bottom: 1.5rem;
-background-color: white;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: white;
 }
 
 .proj-card:hover {
-box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+    outline: 4px solid #F9BBBC;
+    outline-offset: 10px; 
+    
 }
 
 .proj-card img {
-width: 100%;
-border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .card-text {
-padding: 0.7rem 0.9rem;
+    padding: 0.7rem 0.9rem;
 }
