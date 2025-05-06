@@ -4,7 +4,6 @@
     width: 100%;
     text-align: center;
     position: relative;
-    height: 100rem;
 }
 
 .hero-skate h3 {
@@ -26,32 +25,9 @@
     margin-top: 4rem;
 }
 
-.decorative-bar {
-    display: inline-block;
-    background-color: #F9BBBC;
-    color: #292929;
-    padding: 0.3rem 1rem;
-    border-radius: 999px; /* fully rounded */
-    font-family: "proxima-soft", sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
-}
-
-.hero-skate p {
-    font-size: 1rem;
-    color: #292929;
-}
-
-.text-item-bold {
-    margin-top: 1rem;
-    font-weight: 600;
-}
-
 .right-img {
     margin-top: 4rem;
     padding-left: 4rem;
-    background-color: #567741;
     width: 60%;
 }
 

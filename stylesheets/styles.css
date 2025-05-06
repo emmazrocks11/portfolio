@@ -45,6 +45,11 @@ p {
     justify-content: flex-start;
 }
 
+.simple-flexbox-btw {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sticky-nav {
     position: sticky;
     top: 0;
@@ -92,7 +97,7 @@ p {
     width: 0;
     height: 2px;
     border-radius: 2px;
-    background-color: #000000;
+    background-color: #567741;
     position: absolute;
     bottom: -0.25rem;
     left: 50%;
@@ -115,4 +120,29 @@ p {
 .nav-divider {
     border: none;
     border-top: 2.5px solid #F9BBBC;
+}
+
+/*PROJECT DETAILS*/
+.decorative-bar {
+    display: inline-block;
+    background-color: #F9BBBC;
+    color: #292929;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    border-radius: 999px; /* fully rounded */
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.proj-details p {
+    text-align: left;
+    font-size: 1rem;
+    color: #292929;
+}
+
+.text-item-bold {
+    margin-top: 1rem;
+    font-weight: 600;
 }

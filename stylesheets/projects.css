@@ -1,0 +1,67 @@
+body {
+    background-color: #567741;
+}
+
+.proj-heading {
+    box-sizing: border-box;
+    padding: 4rem 0rem 0rem;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.proj-heading h1 {
+    font-size: 5rem;
+    color: #F9BBBC;
+    margin-bottom: 4rem;
+}
+
+.proj-heading p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: 3rem;
+}
+
+.white-font {
+    color: #ffffff;
+}
+
+.subheading-line {
+    border: none;
+    border-top: 1.5px solid #74975f;
+}
+
+/* PROJECT CARDS */
+.proj-content {
+    margin-top: 2rem;
+}
+
+.simple-flexbox-btw {
+    flex-wrap: wrap;
+}
+
+.proj-card {
+    width: 47%;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+.proj-card:hover {
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+    outline: 4px solid #F9BBBC;
+    outline-offset: 10px; 
+    
+}
+
+.proj-card img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-text {
+    padding: 0.7rem 0.9rem;
+}
