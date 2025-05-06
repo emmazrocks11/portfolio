@@ -44,29 +44,6 @@ gsap.to(".nav-divider", {
     }
 });
 
-// NAVBAR PADDING CHANGES
-gsap.to(".navbar", {
-    scrollTrigger: {
-        trigger: "section:nth-of-type(1)",
-        start: "top 10%",
-        scrub: false,
-        onEnter: () => {
-            gsap.to(".navbar", {
-            paddingTop: "0.8rem",
-            paddingBottom: "0.8rem",
-            duration: 0.1
-            });
-        },
-        onLeaveBack: () => {
-            gsap.to(".navbar", {
-            paddingTop: "1.5rem",
-            paddingBottom: "1.5rem",
-            duration: 0.1
-            });
-        }
-    }
-});
-
 // PROJECT CARDS Left and Right
 ScrollTrigger.create({
     trigger: ".feat-proj",
@@ -75,5 +52,3 @@ ScrollTrigger.create({
     pin: ".left-header",
     scrub: false
 });
-
-// SNAP CARDS

@@ -45,11 +45,6 @@ outline: 2px solid red;
     padding: 5rem 0rem 5rem;
 }
 
-.simple-flexbox {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .left-header {
     width: 50%;
     text-align: left;

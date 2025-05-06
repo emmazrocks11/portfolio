@@ -14,6 +14,16 @@ h1 {
 
 h2 {
     font-family: "proxima-soft", sans-serif;
+    font-weight: 200;
+}
+
+h3 {
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: "proxima-soft", sans-serif;
     font-weight: 300;
 }
 
@@ -28,6 +38,11 @@ p {
     overflow: hidden;
     margin: 0 auto;
     padding: 0 5rem;
+}
+
+.simple-flexbox {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .sticky-nav {
@@ -69,6 +84,24 @@ p {
     font-family: "proxima-soft", sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
+    position: relative;
+}
+
+.navbar li a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    transition: width .4s, left .4s;
+}
+
+.navbar li a:hover::before {
+    width: 100%;
+    left: 0;
 }
 
 .content-container-divider {
