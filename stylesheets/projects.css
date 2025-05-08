@@ -41,7 +41,7 @@ body {
 }
 
 .proj-card {
-    width: 47%;
+    width: 100%;
     border-radius: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -64,4 +64,10 @@ body {
 
 .card-text {
     padding: 0.7rem 0.9rem;
+}
+
+.proj-content a {
+    text-decoration: none;
+    color: inherit;
+    width: 47%;
 }

@@ -117,9 +117,21 @@ p {
     padding: 0 4.5rem;
 }
 
+/*DIVIDERS*/
 .nav-divider {
     border: none;
     border-top: 2.5px solid #F9BBBC;
+}
+
+/*VERTICAL LINE*/
+.vertical-divider-left {
+    border-left: 2.5px solid #567741; 
+}
+
+/*THIN GRAY DIVIDER*/
+.heading-divider {
+    border: none;
+    border-top: 1.5px solid #e3e3e3;
 }
 
 /*PROJECT DETAILS*/

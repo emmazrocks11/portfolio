@@ -1,35 +1,50 @@
-.hero-tedxuw {
+.hero-choco {
     box-sizing: border-box;
-    padding: 4rem 0rem 8rem;
+    padding: 4rem 0 6rem;
     width: 100%;
     text-align: left;
     position: relative;
 }
 
 .simple-flexbox-btw {
-    align-items: center;
+    width: 100%;
 }
 
-.main-heading {
-    margin-right: 5rem;
-}
-
-.hero-tedxuw h4 {
+.hero-choco h4 {
     font-size: 2.5rem;
     color: #567741;
 }
 
-.hero-tedxuw h3 {
+.hero-choco h3 {
     font-size: 8rem;
     color: #292929;
     line-height: 7rem;
 }
 
-.hero-tedxuw img {
+.header-img {
+    margin-left: 6rem;
     width: 8%;
 }
 
-.ted-laptop {
+.header-under {
+    margin-top: 6rem;
+}
+
+.left-text {
+    text-align: left;
+    width: 40%;
+}
+
+.right-img {
+    padding-left: 4rem;
+    width: 60%;
+}
+
+.right-img img {
+    width: 100%;
+}
+
+.choco-mockup {
     margin-top: 4rem;
     margin-bottom: 4rem;
     background-color: #567741;
@@ -39,7 +54,7 @@
     text-align: center;
 }
 
-.ted-laptop img {
+.choco-mockup img {
     width: 80%
 }
 
@@ -62,10 +77,6 @@
     align-items: stretch;
 }
 
-.btw-text {
-    margin-bottom: 8rem;
-}
-
 .background-info h4 {
     font-size: 2.5rem;
     color: #567741;
@@ -80,4 +91,3 @@
     padding-left: 1rem;
     width: 50%;
 }
-
