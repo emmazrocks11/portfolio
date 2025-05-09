@@ -55,15 +55,11 @@
 
 .background-info h1 {
     font-size: 5rem;
-    color: #F9BBBC;
+    color: #292929;
 }
 
-.simple-flexbox-btw {
+.background-info .simple-flexbox-btw {
     align-items: stretch;
-}
-
-.btw-text {
-    margin-bottom: 8rem;
 }
 
 .background-info h4 {
@@ -79,5 +75,44 @@
 .vertical-divider-left {
     padding-left: 1rem;
     width: 50%;
+    margin-bottom: 4rem;
+    border-color: #f9bbbc;
 }
+
+.btw-header-p {
+    margin-bottom: 1rem;
+}
+
+.goal-div {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+}
+
+.emphasize {
+    font-weight: 600;
+}
+
+.boil-div {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color:#567741;
+}
+
+.boil-div h1 {
+    margin-bottom: 1rem;
+    font-size: 3.7rem;
+    color: #567741;
+}
+
+.boil-div i {
+    font-size: 3.5rem;
+}
+
+
+
 
