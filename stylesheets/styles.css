@@ -158,3 +158,12 @@ p {
     margin-top: 1rem;
     font-weight: 600;
 }
+
+/*between "My Role" and the paragraph*/
+.btw-header-p {
+    margin-bottom: 1rem;
+}
+
+.emphasize {
+    font-weight: 600;
+}

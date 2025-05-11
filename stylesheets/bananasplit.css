@@ -1,0 +1,182 @@
+.hero-banana {
+    box-sizing: border-box;
+    padding: 4rem 0rem 4rem;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-banana h3 {
+    font-size: 7rem;
+    color: #292929;
+    line-height: 7rem;
+    text-align: left;
+}
+
+.hero-banana h4 {
+    font-size: 3rem;
+    color: #567741;
+    text-align: left;
+}
+
+/*margin underneath the project details*/
+.header-under {
+    margin-top: 6rem;
+}
+
+.left-text {
+    text-align: left;
+    width: 40%;
+}
+
+.right-img {
+    padding-left: 4rem;
+    width: 60%;
+}
+
+.right-img img {
+    width: 100%;
+}
+
+/*BACKGROUND INFO SECTION*/
+.background-info {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.heading-divider {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.background-info h1, .research h1, .design-process h1 {
+    font-size: 5rem;
+    color: #292929;
+}
+
+.background-info, .simple-flexbox-btw, .research .simple-flexbox-btw {
+    align-items: stretch;
+}
+
+.background-info h4, .research h4, .design-process h4 {
+    font-size: 2.5rem;
+    color: #567741;
+}
+
+.header-left {
+    width: 50%;
+}
+
+/*VERTICAL LINE*/
+.vertical-divider-left {
+    padding-left: 1rem;
+    width: 50%;
+    border-color: #f9bbbc;
+}
+
+/*PROBLEM STATEMENT SECTION*/
+.problem-statement {
+    background-color: #f9bbbc;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.problem-statement h4 {
+    font-size: 2.5rem;
+    color: #292929;
+}
+
+/*RESEARCH SECTION*/
+.research {
+    padding-top: 6rem;
+}
+
+.affinity-diagram {
+    background-color: #e9e9e9;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.affinity-diagram img {
+    width: 100%;
+}
+
+.interview-takeaways .simple-flexbox-btw {
+    flex-wrap: wrap;
+}
+
+.interview-takeaways .takeaway-card {
+    width: 47%;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #f9bbbc;
+}
+
+.design-process {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+table {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    border-color: #666666;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "proxima-soft", sans-serif;
+}
+
+thead {
+    background-color: #f9bbbc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td ul {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+td ul li {
+    margin: 0.5rem 0rem;
+}
+
+/*GREEN BACKGROUNDS*/
+.green-must {
+    background-color: #56774184;
+}
+
+.green-should {
+    background-color: #56774165;
+}
+
+.green-could {
+    background-color: #56774140;
+}
+
+.green-wont {
+    background-color: #56774120;
+}   
+
+/*GRAY BACKGROUNDS*/
+.gray-must {
+    background-color: #e3e3e3b3;
+}
+
+.gray-should {
+    background-color: #e3e3e380;
+}
+
+.gray-could {
+    background-color: #e3e3e34d;
+}
+
+
