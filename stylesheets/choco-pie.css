@@ -172,3 +172,223 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
+/* Carousel Styles */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 2rem 0;
+    padding: 1rem 0 2rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+    scroll-snap-type: x mandatory;
+    padding: 1rem calc(50% - 18rem); /* Centers the first and last slides (36rem/2 = 18rem) */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 36rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    scroll-snap-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.85);
+    opacity: 0.6;
+}
+
+.carousel-item.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.carousel-item canvas {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    background-color: #e3e3e3;
+    border-radius: 0 0 1rem 1rem;
+    flex-direction: column;
+}
+
+.carousel-slider-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 1rem;
+}
+
+.carousel-slider {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    background: #567741;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.carousel-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #567741;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    background: #4a6537;
+}
+
+.carousel-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #567741;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.carousel-slider::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    background: #4a6537;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.carousel-arrow {
+    background: transparent;
+    border: 2px solid #567741;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.8rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(86, 119, 65, 0.1);
+    transform: scale(1.1);
+}
+
+.carousel-arrow:active {
+    background-color: #567741;
+    transform: scale(0.95);
+}
+
+.carousel-arrow i {
+    font-size: 2rem;
+    color: #567741;
+    transition: color 0.3s ease;
+}
+
+.carousel-arrow:hover i {
+    color: #567741;
+}
+
+.carousel-arrow:active i {
+    color: white;
+}
+
+.carousel-counter {
+    font-family: 'proxima-soft', sans-serif;
+    font-size: 1.2rem;
+    color: #292929;
+    min-width: 4rem;
+    text-align: center;
+}
+
+.carousel-counter strong {
+    font-weight: 700;
+}
+
+.slide-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.slide-link:hover {
+    transform: scale(1.02);
+}
+
+.slide-tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #567741;
+    color: #567741;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'proxima-soft', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.slide-link:hover .slide-tooltip {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.slide-tooltip i {
+    font-size: 1.1rem;
+}

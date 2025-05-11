@@ -59,7 +59,7 @@
         <h1>01. Background</h1>
         <hr class="heading-divider">
         <div class="fun-intro">
-            <p>“Project 2 is going to be the hunkiest chunkiest project this term, so think about some brands that need a little more work”, said my professor—Terry O’Neill.
+            <p>"Project 2 is going to be the hunkiest chunkiest project this term, so think about some brands that need a little more work", said my professor—Terry O'Neill.
             </p>
         </div>
 
@@ -79,19 +79,19 @@
 
         <h4 class="btw-header-p">Choco Pie: <i>A beloved sweet treat</i></h4>
         <div class="simple-flexbox-btw">
-            <p class="choco-intro-left">One of South Korea’s most popular snacks, Choco Pie consists of two soft layers of cake with a marshmallow filling, coated in a thin layer of chocolate.
+            <p class="choco-intro-left">One of South Korea's most popular snacks, Choco Pie consists of two soft layers of cake with a marshmallow filling, coated in a thin layer of chocolate.
             </p>
             <div class="choco-intro-right">
                 <p class="btw-header-p">
                     The original Choco Pie was created by Orion Corporation in 1973. In 1979, Lotte Confectionery began to sell their version of Choco Pie.</p>
                 <p class="btw-header-p">
-                    At face value, Orion and Lotte’s Choco Pie branding looks IDENTICAL. Orion ended up filing a lawsuit in 1999 against Lotte (which which Orion ended up losing).
+                    At face value, Orion and Lotte's Choco Pie branding looks IDENTICAL. Orion ended up filing a lawsuit in 1999 against Lotte (which which Orion ended up losing).
                 </p>
                 <img src="assets/choco-pie-cover.png" alt="choco pie logo">
             </div>
         </div>
 
-        <h4>Rose and I ended up choosing to focus on <i class="emphasize">Lotte’s Choco Pie</i>. The aim for this brand redesign was to shift away from their similarities to Orion, and present them as a new take on the same beloved snack.
+        <h4>Rose and I ended up choosing to focus on <i class="emphasize">Lotte's Choco Pie</i>. The aim for this brand redesign was to shift away from their similarities to Orion, and present them as a new take on the same beloved snack.
         </h4>
     </section>
 
@@ -146,8 +146,27 @@
 
     <section class="brand-package">
         <div class="content-container">
-            <h1>02. Brand Package</h1>
+            <h1>03. Brand Package</h1>
             <hr class="heading-divider">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- PDF slides will be inserted here by JavaScript -->
+                </div>
+                <div class="carousel-navigation">
+                    <div class="carousel-slider-container">
+                        <input type="range" class="carousel-slider" min="0" max="33" value="0">
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-arrow prev" aria-label="Previous slide">
+                            <i class="ti ti-chevron-left"></i>
+                        </button>
+                        <div class="carousel-counter">1 / <strong>34</strong></div>
+                        <button class="carousel-arrow next" aria-label="Next slide">
+                            <i class="ti ti-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -156,6 +175,7 @@
     <script src="scripts/ScrollTrigger.min.js"></script>
     <script src="scripts/ScrollToPlugin.min.js"></script>
     <script src="scripts/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="scripts/choco-pie.js"></script>
 </body>
 </html>
