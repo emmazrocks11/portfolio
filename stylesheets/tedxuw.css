@@ -199,7 +199,7 @@ p {
     border-color: #3e3e3e;
 }
 
-/*the gray goal box*/
+/*the gray box*/
 .theme-odd {
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -213,8 +213,13 @@ p {
     display: inline-block;
 }
 
+.theme .simple-flexbox-btw {
+    display: flex;
+    align-items: flex-start;
+}
+
 .theme-keywords {
-    width: 50%;
+    width: 40%;
 }
 
 .theme-keywords .simple-flexbox {
@@ -233,14 +238,46 @@ p {
     margin-right: 1rem;
 }
 
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 250,
-    'GRAD' 0,
-    'opsz' 24
+.square-border i {
+    font-size: 1.5rem;
 }
+
+.theme-logo {
+    width: 55%;
+}
+
+.theme-logo .simple-flexbox-btw {
+    display: flex;
+    align-items: flex-end;
+}
+
+.theme-logo-left {
+    width: 45%;
+}
+
+.theme-logo-left p {
+    margin-bottom: 1rem;
+}
+
+.theme-logo-right {
+    width: 25%;
+}
+
+.theme-logo-left img, .theme-logo-right img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.theme-final {
+    margin-top: 4rem;
+}
+
+.theme-final img {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 
 
 

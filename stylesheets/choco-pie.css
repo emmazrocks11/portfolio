@@ -1,6 +1,6 @@
 .hero-choco {
     box-sizing: border-box;
-    padding: 4rem 0 6rem;
+    padding: 4rem 0 4rem;
     width: 100%;
     text-align: left;
     position: relative;
@@ -58,9 +58,10 @@
     width: 80%
 }
 
+/*BACKGROUND INFO SECTION*/
 .background-info {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 .heading-divider {
@@ -68,16 +69,29 @@
     margin-bottom: 2rem;
 }
 
-.background-info h1 {
+.background-info h1, .project-requirements h1, .brand-package h1 {
     font-size: 5rem;
-    color: #F9BBBC;
+    color: #292929;
 }
 
-.simple-flexbox-btw {
+/*the gray box*/
+.fun-intro {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.fun-intro p {
+    font-size: 1.2rem;
+}
+
+.background-info .simple-flexbox-btw {
     align-items: stretch;
 }
 
-.background-info h4 {
+.background-info h4, .choco-intro h4, .project-requirements h4 {
     font-size: 2.5rem;
     color: #567741;
 }
@@ -90,5 +104,71 @@
 .vertical-divider-left {
     padding-left: 1rem;
     width: 50%;
+    border-color: #f9bbbc;
+    margin-bottom: 4rem;
 }
 
+.choco-intro-left {
+    width: 45%;
+    margin-bottom: 4rem;
+}
+
+.choco-intro-right {
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+.choco-intro-right img {
+    width: 100%;
+}
+
+/*project parts*/
+.project-parts {
+    border: 2px solid #f9bbbc;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    width: 30%;
+    text-align: left;
+    align-items: center;
+}
+
+.project-parts:hover {
+    background-color: #f9bbbc54;
+    transition: background-color 0.3s ease;
+}
+
+.project-parts h3 {
+    font-size: 2.5rem;
+    color: #567741;
+}
+
+.project-parts i {
+    font-size: 2.5rem;
+    color: #567741;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.project-parts p {
+    margin: 0.5rem 0;
+}
+
+.project-parts ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: 'proxima-soft', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.project-requirements h4 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.brand-package {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}

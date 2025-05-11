@@ -37,3 +37,120 @@
 .right-img img {
     width: 100%;
 }
+
+/*BACKGROUND INFO SECTION*/
+.background-info {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.heading-divider {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.background-info h1 {
+    font-size: 5rem;
+    color: #292929;
+}
+
+/*the gray goal box*/
+.about-skate {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.about-skate p {
+    font-size: 1.2rem;
+}
+
+.background-info .simple-flexbox-btw {
+    align-items: stretch;
+}
+
+.background-info h4, .old-design h4 {
+    font-size: 2.5rem;
+    color: #567741;
+}
+
+.header-left {
+    width: 50%;
+}
+
+/*VERTICAL LINE*/
+.vertical-divider-left {
+    padding-left: 1rem;
+    width: 50%;
+    border-color: #f9bbbc;
+}
+
+/*Why I chose SC section*/
+.why-i {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color:#567741;
+}
+
+.why-i h1 {
+    margin-bottom: 1rem;
+    font-size: 3.7rem;
+    color: #567741;
+}
+
+.why-i-arrow {
+    font-size: 3.5rem;
+}
+
+/*pink problem statement section*/
+.prob-statement {
+    margin-top: 1.6rem;
+    background-color: #f9bbbc;
+    width: 100%;
+    padding: 2rem 0rem;
+    text-align: left;
+}
+
+.prob-statement p {
+    color: #292929;
+}
+
+.why-i .simple-flexbox-btw {
+    margin-top: 2rem;
+    align-items: center;
+}
+
+/*issue card*/
+.issue-card {
+    border: 2px solid #dc8687;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    width: 32%;
+    text-align: center;
+}
+
+.issue-card h4 {
+    font-size: 1.7rem;
+    color: #292929;
+    margin-bottom: 1.7rem;
+}
+
+.why-i .issue-card i {
+    font-size: 6rem;
+    color: #dc8687;
+}
+
+.issue-card p {
+    margin-top: 1.7rem;
+    text-align: left;
+}
+
+/*OLD DESIGN SECTION*/
+.old-design {
+    margin-top: 6rem;
+}
+
+

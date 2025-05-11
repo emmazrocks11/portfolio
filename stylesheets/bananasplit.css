@@ -54,7 +54,7 @@
     color: #292929;
 }
 
-.background-info, .simple-flexbox-btw, .research .simple-flexbox-btw {
+.background-info .simple-flexbox-btw, .research .simple-flexbox-btw {
     align-items: stretch;
 }
 
@@ -179,4 +179,57 @@ td ul li {
     background-color: #e3e3e34d;
 }
 
+/*SKETCHES SECTION*/
 
+.sketches .simple-flexbox-btw {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    gap: 2rem;
+}
+
+.left-sketches {
+    width: calc(60% - 1rem);
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-rounded {
+    border-radius: 0.5rem;
+}
+
+.left-flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left-flex-wrap .sketch-img {
+    width: calc(50% - 1rem);
+    border-radius: 0.5rem;
+}
+
+.right-sketches {
+    width: calc(40% - 1rem);
+}
+
+.right-sketches img {
+    width: calc(100% - 1rem);
+    border-radius: 0.5rem;
+}
+
+/*the gray goal box*/
+.eg-div {
+    margin-top: 2rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.eg-div p {
+    font-size: 1.2rem;
+}
