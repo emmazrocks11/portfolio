@@ -14,8 +14,9 @@ outline: 2px solid red;
 
 .hero h1 {
     color: #567741;
-    font-size: 6rem;
-    line-height: 4rem;
+    font-size: 8rem;
+    line-height: 6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 } 
 
 .hero p {
@@ -32,10 +33,17 @@ outline: 2px solid red;
     transform: translateX(5rem);
 }
 
-.matcha-img {
-    margin: 0 auto;
-    margin: 4rem 0rem 0rem;
-    width: 7rem;
+.hero h4 {
+    margin: 4rem 0 6rem;
+    font-size: 1.2rem;
+    color: #292929;
+}
+
+.hero-matcha-img {
+    display: block;
+    max-width: 5rem;
+    width: 100%;
+    height: auto;
 }
 
 /*FEATURED PROJECTS*/
@@ -97,7 +105,7 @@ outline: 2px solid red;
     box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);
     transform: scale(0.95);
     transition: transform 0.3s ease;
-    outline: 4px solid #F9BBBC;
+    outline: 4px solid #f9bbbc;
     outline-offset: 10px; 
     
 }
@@ -115,3 +123,87 @@ outline: 2px solid red;
     text-decoration: none;
     color: inherit;
 }
+
+.matcha-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: transform 0.5s ease;
+    z-index: 2;
+}
+
+.matcha-text {
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: left;
+    padding-left: 2rem;
+    z-index: 1;
+    pointer-events: none;
+    margin-top: -3.5rem; /* Adjust to align with matcha */
+}
+
+.matcha-text p {
+    font-size: 1.2rem;
+    color: #292929;
+    line-height: 1.7rem;
+    max-width: 25rem; /* Limit width to align with pill */
+    margin-left: 0;
+}
+
+.matcha-wrapper:hover {
+    transform: translateX(-15%);
+}
+
+.matcha-wrapper:hover + .matcha-text {
+    opacity: 1;
+}
+
+.circular-text {
+    position: absolute;
+    top: 50%; /* Visually center the circle over the matcha */
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.circular-text span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    color: #292929;
+    font-family: 'Proxima Soft', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    transform: translate(-50%, -50%);
+    white-space: pre;
+    pointer-events: none;
+}
+
+.hero-pill {
+    display: inline-block;
+    background: #f9bbbc;
+    color: #292929;
+    padding: 0.3rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 8px 0 #0000002c;
+    margin-bottom: 2rem;
+}
+
+
+

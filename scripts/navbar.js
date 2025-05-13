@@ -5,7 +5,7 @@ gsap.to("nav", {
     scrollTrigger: {
         trigger: "section:nth-of-type(1)",
         start: "top 10%",
-        scrub: false,
+        scrub: 0.5,
         onEnter: () => {
             gsap.to(".navbar", {
             paddingTop: "0.8rem",

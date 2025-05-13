@@ -121,42 +121,21 @@ p {
     color: #567741;
 }
 
-.boil i {
-    font-size: 3.5rem;
-}
-
 /*pink problem statement section*/
 .prob-statement {
     margin-top: 1.6rem;
-    background-color: #f9bbbc;
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     text-align: left;
 }
 
-.prob-statement .simple-flexbox-btw {
-    display: flex;
-    align-items: center;
-    min-height: 8rem;
-}
-
 .prob-statement h4 {
-    font-size: 2.5rem;
+    width: 70%;
+    font-size: 3.5rem;
     color: #292929;
 }
 
-.prob-statement p {
+. {
     font-size: 1.2rem;
     color: #292929;
-}
-
-.vertical-divider-prob {
-    background-color: #567741;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 2.5px;
-    min-height: 4rem;
 }
 
 /*basics section*/
@@ -277,6 +256,20 @@ p {
     padding: 2rem;
     border-radius: 1rem;
 }
+
+.ted-design {
+    margin-top: 2rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    padding: 4rem 4rem;
+}
+
+.ted-design img {
+    width: 100%;
+}
+
+
+
 
 
 
