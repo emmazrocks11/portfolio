@@ -1,0 +1,144 @@
+.hero-about {
+    box-sizing: border-box;
+    padding: 4rem 0rem 0rem;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-about h5 {
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 800;
+    font-size: 7rem;
+    color: #F9BBBC;
+    transform: translateX(3rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-about h1 {
+    font-size: 12rem;
+    line-height: 1.2rem;
+    color: #567741;
+    padding-bottom: 9rem;
+    transform: translateX(-3rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-about .flexbox-center img {
+    width: 8rem;
+    transform: translateY(-2rem);
+}
+
+.welcome-about {
+    font-size: 3.5rem;
+    color: #292929;
+    text-align: center;
+    transform: translateX(4rem) translateY(-6rem);
+}
+
+/*ABOUT ME*/
+.about-me {
+    padding: 4rem 0rem;
+    text-align: left;
+}
+
+.about-me h4 {
+    font-size: 2rem;
+    color: #567741;
+}
+
+.about-me img {
+    width: 25%;
+    border-radius: 1rem;
+    margin-right: 3rem;
+}
+
+.about-me-text {
+    width: 45%;
+}
+
+.design-ethos {
+    padding-bottom: 6rem;
+    text-align: left;
+}
+
+.design-ethos-header {
+    width: fit-content;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0 auto;
+    transform: translateY(4rem);
+    z-index: 9999;
+}
+
+.design-ethos h1 {
+    font-size: 7rem;
+    color: #567741;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.design-ethos .simple-flexbox-btw {
+    padding: 5rem 2rem 2rem;
+    border: 2px solid #F9BBBC;
+    border-radius: 1rem;
+}
+
+.design-ethos .ethos-div {
+    width: 30%;
+}
+
+.ethos-div h4 {
+    font-size: 2rem;
+    color: #567741;
+}
+
+.design-favourites {
+    background-color: #F9BBBC;
+    padding: 2rem 0rem;
+    text-align: left;
+}
+
+.design-favourites h4 {
+    font-size: 3.5rem;
+    color: #567741;
+}
+
+.favourites-flexbox {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.favourites-box {
+    width: 23%;
+    background-color: #fad2d3;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.favourites-box:hover {
+    transform: translateY(-0.5rem);
+}
+
+.favourites-box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+

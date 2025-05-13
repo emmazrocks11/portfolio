@@ -50,7 +50,7 @@ outline: 2px solid red;
 
 .feat-proj {
     /*background-color: #A5B38E;*/
-    padding: 5rem 0rem 5rem;
+    padding-top: 5rem;
 }
 
 .left-header {
@@ -204,6 +204,7 @@ outline: 2px solid red;
     box-shadow: 0 2px 8px 0 #0000002c;
     margin-bottom: 2rem;
 }
+
 
 
 

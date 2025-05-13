@@ -48,8 +48,9 @@ gsap.to(".nav-divider", {
 ScrollTrigger.create({
     trigger: ".feat-proj",
     start: "top top",
-    end: () => "+=" + document.querySelector(".right-cards").offsetHeight,
+    end: "bottom bottom",
     pin: ".left-header",
+    pinSpacing: false,
     scrub: false
 });
 
