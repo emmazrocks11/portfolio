@@ -2,6 +2,10 @@ body {
     background-color: #567741;
 }
 
+.proj-content {
+    padding-bottom: 4rem;
+}
+
 .proj-heading {
     box-sizing: border-box;
     padding: 4rem 0rem 0rem;
@@ -48,12 +52,12 @@ body {
     margin-bottom: 2rem;
     background-color: white;
     box-shadow: 0 0.4rem 0.6rem 0 rgba(0, 0, 0, 0.295);
+    transition: transform 0.3s ease;
 }
 
 .proj-card:hover {
     box-shadow: 0 0.2rem 0.4rem 0 rgba(0,0,0,0.15);
     transform: scale(0.95);
-    transition: transform 0.3s ease;
     outline: 4px solid #F9BBBC;
     outline-offset: 10px; 
     

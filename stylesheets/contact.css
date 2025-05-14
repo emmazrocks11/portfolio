@@ -1,0 +1,79 @@
+.contact {
+    padding: 4rem 0;
+    background-color: #567741;
+}
+
+.contact h1 {
+    font-size: 5rem;
+    color: #F9BBBC;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.176);
+}
+
+.contact-box {
+    width: 47%;
+    padding: 1rem;
+    background-color: #6a8857;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    display: block;
+}
+
+.contact-box:hover {
+    transform: translateY(-0.5rem);
+    background-color: #9bb989;
+}
+
+.contact-box .email-box {
+    cursor: pointer;
+}
+
+.contact-box.email-box.copied {
+    background-color: #567741;
+}
+
+.copy-notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F9BBBC;
+    color: #292929;
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    font-family: "proxima soft", sans-serif;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.copy-notification.show {
+    opacity: 1;
+}
+
+.contact .vertical-divider-left {
+    border-left: 3px solid #F9BBBC;
+}
+
+.contact-box h4 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+
+.contact-box p {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+
+
+
+
+
+

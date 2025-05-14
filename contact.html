@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="stylesheet" href="stylesheets/contact.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <div class="sticky-nav">
+        <nav class="navbar content-container">
+            <a href="index.html">
+                <img src="assets/personal-porty-logo.svg" alt="Emma's mayhem logo">
+            </a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="assets/Emma_Zhang_UW_Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>  
+    </div>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="content-container">
+            <h1>can't wait to hear from you!</h1>
+            <div class="simple-flexbox-btw">
+                <div class="contact-box vertical-divider-left">
+                    <div class="email-box" onclick="copyEmail()">
+                        <h4 class="emphasize">Email</h4>
+                        <p>emmaleannzhang@gmail.com</p>
+                    </div>
+                    <div class="copy-notification">Copied!</div>
+                </div>
+                <a href="https://www.linkedin.com/in/emma-zhang-71b9b8216/" target="_blank" class="contact-box vertical-divider-left">
+                    <h4 class="emphasize">LinkedIn</h4>
+                    <p>Let's connect on LinkedIn!</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="content-container">
+            <div class="welcome">
+                <h4>welcome to my</h4>
+                <h1><span class="em">mayh</span>em</h1>
+            </div>
+                
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="assets/Emma_Zhang_UW_Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <hr class="footer-divider">
+            </nav>
+            <p class="copyright">© 2025 Emma's Mayhem. Designed and coded by Emma :></p>
+        </div>
+    </footer>
+
+    <!-- scripts-->
+    <script src="scripts/gsap.min.js"></script>
+    <script src="scripts/ScrollTrigger.min.js"></script>
+    <script src="scripts/ScrollToPlugin.min.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>
