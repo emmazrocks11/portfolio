@@ -36,6 +36,7 @@
 
 .right-img img {
     width: 100%;
+    border-radius: 0.5rem;
 }
 
 /*BACKGROUND INFO SECTION*/
@@ -130,6 +131,12 @@
     padding: 2rem 2rem;
     width: 32%;
     text-align: center;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease;
+}
+
+.issue-card:hover {
+    background-color: #fad2d3;
+    transform: translateY(-0.5rem);
 }
 
 .issue-card h4 {
@@ -150,7 +157,30 @@
 
 /*OLD DESIGN SECTION*/
 .old-design {
-    margin-top: 6rem;
+    margin: 6rem 0;
 }
+
+.simple-flexbox-wrap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+}
+
+.old-design-img {
+    width: 47%;
+}
+
+.old-design-img img {
+    width: 100%;
+}
+
+.old-design-img p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
 
 

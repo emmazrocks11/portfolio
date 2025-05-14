@@ -109,7 +109,7 @@ p {
 /*boil it down section*/
 .boil {
     display: block;
-    margin: 4rem 0;
+    margin: 4rem 0 8rem;
     text-align: center;
     color:#567741;
 }
@@ -118,6 +118,10 @@ p {
     margin-bottom: 1rem;
     font-size: 3.7rem;
     color: #292929;
+}
+
+.boil-arrow {
+    font-size: 3.5rem;
 }
 
 /*problem statement section*/
@@ -132,11 +136,6 @@ p {
     font-size: 3.5rem;
     color: #567741;
 }
-
-/*.prob-statement p {
-    font-size: 1.2rem;
-    color: #292929;
-}*/
 
 /*basics section*/
 .basics {
@@ -155,7 +154,7 @@ p {
 }
 
 /*theme section*/
-.theme {
+.theme, .takeaway {
     background-color: #292929;
     width: 100%;
     padding-top: 4rem;
@@ -164,7 +163,7 @@ p {
     color: #fff;
 }
 
-.theme h1 {
+.theme h1, .takeaway h1 {
     font-size: 5rem;
     color: #f9bbbc;
 }
@@ -174,7 +173,7 @@ p {
     color: #a3c590;
 }
 
-.theme .heading-divider {
+.theme .heading-divider, .takeaway .heading-divider {
     border-color: #3e3e3e;
 }
 
@@ -353,6 +352,39 @@ p {
 .deliverables-left p {
     margin-top: 1rem;
 }
+
+.takeaway a {
+    background-color: #3e3e3e;
+    font-family: 'proxima-soft', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.takeaway a:hover {
+    background-color: #567741;
+}
+
+@keyframes bounceArrow {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+.takeaway .ti-arrow-right {
+    animation: bounceArrow 1s ease-in-out infinite;
+}
+
+
+
+
+
 
 
 
