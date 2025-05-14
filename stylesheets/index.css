@@ -6,7 +6,7 @@ outline: 2px solid red;
 
 .hero {
     box-sizing: border-box;
-    padding: 4rem 0 15rem;
+    padding: 4rem 0 5rem;
     width: 100%;
     text-align: center;
     position: relative;
@@ -46,11 +46,16 @@ outline: 2px solid red;
     height: auto;
 }
 
+.cow-joke h1{
+    color: #fff;
+    margin-top: 10rem;
+}
+
 /*FEATURED PROJECTS*/
 
 .feat-proj {
     /*background-color: #A5B38E;*/
-    padding-top: 5rem;
+    padding-top: 4.5rem;
 }
 
 .left-header {

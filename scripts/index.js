@@ -151,3 +151,49 @@ gsap.to(".circular-text span", {
         }
     }
 });
+
+// MATCHA TEXT COLOR
+gsap.to(".matcha-text p", {
+    scrollTrigger: {
+        trigger: "section:nth-of-type(2)",
+        start: "top 80%",
+        end: "bottom top",
+        scrub: false,
+        onEnter: () => {
+            gsap.to(".matcha-text p", {
+            color: "#ffffff",
+            duration: 0.1
+            });
+        },
+        onLeaveBack: () => {
+            gsap.to(".matcha-text p", {
+            color: "#292929",
+            duration: 0.1
+            });
+        }
+    }
+});
+
+// COW JOKE TEXT COLOR
+gsap.to(".cow-joke h1", {
+    scrollTrigger: {
+        trigger: "section:nth-of-type(2)",
+        start: "top 80%",
+        end: "bottom top",
+        scrub: false,
+        onEnter: () => {
+            gsap.to(".cow-joke h1", {
+            color: "#5a7d43",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
+            duration: 0.1
+            });
+        },
+        onLeaveBack: () => {
+            gsap.to(".cow-joke h1", {
+            color: "#ffffff",
+            textShadow: "none",
+            duration: 0.1
+            });
+        }
+    }
+});
