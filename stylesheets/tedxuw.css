@@ -52,7 +52,7 @@ p {
 /*BACKGROUND INFO SECTION*/
 .background-info {
     padding-top: 4rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .heading-divider {
@@ -60,7 +60,7 @@ p {
     margin-bottom: 2rem;
 }
 
-.background-info h1 {
+.background-info h1, .website-design h1 {
     font-size: 5rem;
     color: #292929;
 }
@@ -73,7 +73,6 @@ p {
     font-size: 2.5rem;
     color: #567741;
 }
-
 .header-left {
     width: 50%;
 }
@@ -110,7 +109,7 @@ p {
 /*boil it down section*/
 .boil {
     display: block;
-    margin: 0 auto;
+    margin: 4rem 0;
     text-align: center;
     color:#567741;
 }
@@ -118,19 +117,20 @@ p {
 .boil h1 {
     margin-bottom: 1rem;
     font-size: 3.7rem;
-    color: #567741;
+    color: #292929;
 }
 
-/*pink problem statement section*/
+/*problem statement section*/
 .prob-statement {
+    display: flex;
+    justify-content: center;
     margin-top: 1.6rem;
-    text-align: left;
 }
 
 .prob-statement h4 {
     width: 70%;
     font-size: 3.5rem;
-    color: #292929;
+    color: #567741;
 }
 
 /*.prob-statement p {
@@ -144,12 +144,12 @@ p {
     margin-bottom: 6rem;
 }
 
-.basics h1 {
+.basics h1, .deliverables h1 {
     font-size: 5rem;
     color: #292929;
 }
 
-.basics h4 {
+.basics h4, .animations h4 {
     font-size: 2.5rem;
     color: #567741;
 }
@@ -251,9 +251,23 @@ p {
     margin-top: 4rem;
 }
 
-.theme-final img {
+.theme-logo-final {
+    width: 25%;
+}
+
+.theme-logo-final img {
     background-color: #ffffff;
     padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.swag-items {
+    width: 70%;
+}
+
+.swag-items img {
+    width: 100%;
     border-radius: 1rem;
 }
 
@@ -267,6 +281,96 @@ p {
 .ted-design img {
     width: 100%;
 }
+
+.website-design {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.animations {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.animations .simple-flexbox-btw {
+    align-items: flex-start;
+}
+
+.video {
+    width: 47%;
+    border-radius: 1rem;
+}
+
+.video video {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.figma-components {
+    width: 47%;
+}
+
+.figma-components-img {
+    border: 1px solid #292929;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.figma-components-img img {
+    width: 88%;
+    border-radius: 1rem;
+}
+
+.deliverables {
+    padding-bottom: 4rem;
+}
+
+.deliverables .simple-flexbox-btw {
+    align-items: flex-start;
+}
+
+.deliverables img {
+    width: 100%;
+}
+
+.deliverables-right {
+    width: 47%;
+}
+
+.deliverables-left {
+    width: 47%;
+}
+
+.deliverables-left hr {
+    margin-top: 3rem;
+    border-top: 2px solid #567741;
+}
+
+.deliverables-left p {
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
