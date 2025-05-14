@@ -48,7 +48,8 @@ outline: 2px solid red;
 
 .cow-joke h1{
     color: #fff;
-    margin-top: 10rem;
+    margin-top: 8rem;
+    text-shadow: none;
 }
 
 /*FEATURED PROJECTS*/
