@@ -50,7 +50,7 @@
     margin-bottom: 2rem;
 }
 
-.background-info h1 {
+.background-info h1, .sitemap h1, .branding h1, .sketch h1, .hi-fi h1 {
     font-size: 5rem;
     color: #292929;
 }
@@ -72,7 +72,7 @@
     align-items: stretch;
 }
 
-.background-info h4, .old-design h4 {
+.background-info h4, .old-design h4, .sitemap h4, .branding h4, .sketch h4, .hi-fi h4 {
     font-size: 2.5rem;
     color: #567741;
 }
@@ -160,26 +160,136 @@
     margin: 6rem 0;
 }
 
-.simple-flexbox-wrap {
-    justify-content: space-between;
-    flex-wrap: wrap;
+.old-design-gallery {
     padding: 2rem;
     background-color: #e3e3e3;
     border-radius: 1rem;
 }
 
+.simple-flexbox-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .old-design-img {
-    width: 47%;
+    width: 48.5%;
 }
 
 .old-design-img img {
     width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
 }
 
-.old-design-img p {
+.old-design-gallery p {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
+
+.old-design-gallery a {
+    margin-top: 2rem;
+    color: #567741;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+}
+
+.old-design-gallery a:hover {
+    color: #3f5f2b
+}
+
+/*SITEMAP SECTION*/
+.sitemap {
+    padding: 4rem 0;
+}
+
+.sitemap img {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #567741;
+}
+
+.sitemap p {
+    margin: 3rem 0;
+}
+
+/*BRANDING SECTION*/
+.branding {
+    padding: 4rem 0;
+}
+
+.branding img {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #e3e3e3;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/*SKETCH SECTION*/
+.sketch {
+    padding: 4rem 0;
+}
+
+.sketch-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sketch-flex img {
+    margin: 0 0.25rem;
+    width: 24%;
+    border-radius: 0.5rem;
+}
+
+.sketch-flex h4 {
+    width: 24%;
+    margin: 0 0.25rem;
+}
+
+/*HI-FIDELITY SECTION*/
+.hi-fi {
+    padding: 4rem 0;
+}
+
+.hi-fi p {
+    margin-bottom: 2rem;
+}
+
+.hi-fi .simple-flexbox-btw {
+    background-color: #e3e3e3;
+    border-radius: 1rem;
+    padding: 0rem 2rem 2rem;
+}
+
+.hi-fi-img {
+    width: 48.5%;
+}
+
+.hi-fi-img p {
+    margin: 2rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #567741;
+}
+
+.hi-fi-img img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
