@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Define links for specific slides
     const slideLinks = {
-        32: 'https://www.figma.com/file/your-figma-link-2',
-        33: 'https://www.figma.com/file/your-figma-link-3'
+        32: 'https://www.youtube.com/watch?v=_nvKLerHdWI&ab_channel=ChocoPie',
+        33: 'https://www.youtube.com/@choco-pie-lotte'
     };
     
     // Set initial counter

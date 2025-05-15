@@ -42,20 +42,7 @@
 
 .right-img img {
     width: 100%;
-}
-
-.choco-mockup {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    background-color: #567741;
-    width: 100%;
     border-radius: 1rem;
-    padding: 3rem 0rem;
-    text-align: center;
-}
-
-.choco-mockup img {
-    width: 80%
 }
 
 /*BACKGROUND INFO SECTION*/
@@ -113,6 +100,13 @@
     margin-bottom: 4rem;
 }
 
+.choco-intro-left img {
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #567741;
+}
+
 .choco-intro-right {
     width: 50%;
     margin-bottom: 4rem;
@@ -120,6 +114,8 @@
 
 .choco-intro-right img {
     width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #567741;
 }
 
 /*project parts*/
