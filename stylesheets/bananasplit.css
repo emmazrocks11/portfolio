@@ -36,6 +36,7 @@
 
 .right-img img {
     width: 100%;
+    border-radius: 0.5rem;
 }
 
 /*BACKGROUND INFO SECTION*/
@@ -114,6 +115,17 @@
     margin-bottom: 2rem;
     padding: 1rem;
     border: 1px solid #f9bbbc;
+}
+
+.takeaway-card ul {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.takeaway-card ul li {
+    margin: 0.5rem 0rem;
+    font-family: "proxima-soft", sans-serif;
+    font-size: 1rem;
 }
 
 .design-process {
