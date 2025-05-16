@@ -50,7 +50,7 @@
     margin-bottom: 2rem;
 }
 
-.background-info h1, .research h1, .design-process h1 {
+.background-info h1, .research h1, .design-process h1, .user-testing h1, .final-prototype h1 {
     font-size: 5rem;
     color: #292929;
 }
@@ -59,7 +59,7 @@
     align-items: stretch;
 }
 
-.background-info h4, .research h4, .design-process h4 {
+.background-info h4, .research h4, .design-process h4, .user-testing h4, .final-prototype h4 {
     font-size: 2.5rem;
     color: #567741;
 }
@@ -106,15 +106,21 @@
 
 .interview-takeaways .simple-flexbox-btw {
     flex-wrap: wrap;
+    margin-bottom: 6rem;
 }
 
 .interview-takeaways .takeaway-card {
-    width: 47%;
+    width: 48%;
     border-radius: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 1px solid #f9bbbc;
+    border: 2px solid #f9bbbc;
+    transition: background-color 0.3s ease;
+}
+
+.takeaway-card:hover {
+    background-color: #f9bbbc56;
 }
 
 .takeaway-card ul {
@@ -244,4 +250,319 @@ td ul li {
 
 .eg-div p {
     font-size: 1.2rem;
+}
+
+.comp-issue-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.comp-issue-flex p {
+    width: 50%;
+}
+
+.comp-issue-flex img {
+    width: 30%;
+}
+
+.banana-name {
+    width: 60%;
+    margin: 2rem auto;
+    color: #292929;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.madimi-one {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    color: #FFC107;
+}
+
+.madimi-two {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 300;
+    color: #FF9914;
+}
+
+.branding {
+    margin: 1rem 0 6rem;
+    width: 100%;
+    background-color: #e3e3e3;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.ui-screens {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    background-color: #292929;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.ui-screens h4 {
+    color: #fff;
+}
+
+.ui-screens .simple-flexbox-btw {
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.ui-screens .simple-flexbox-btw img {
+    margin-top: 2rem;
+    width: 16%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.ui-screens .simple-flexbox-btw img:hover {
+    transform: scale(1.05);
+}
+
+.empty-div {
+    width: 16%;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.user-testing {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.presentation-container {
+    background-color: #567741;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto 6rem;
+}
+
+.presentation-container h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.user-testing img {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.user-testing a {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 1rem auto 0;
+    font-family: "proxima-soft", sans-serif;
+}
+
+.user-testing a:hover img {
+    transform: scale(1.05);
+}
+
+.user-testing a::after {
+    content: "View Presentation";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #567741;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.user-testing a:hover::after {
+    opacity: 1;
+}
+
+.user-feedback {
+    border-radius: 1rem;
+}
+
+.user-feedback h4 {
+    text-align: center;
+}
+
+.user-feedback p {
+    text-align: center;
+    color: #292929;
+}
+
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    padding: 0 1rem;
+}
+
+/* Pagination dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.carousel-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #56774140;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: #567741;
+    transform: scale(1.2);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 2px solid #567741;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.carousel-button:hover {
+    background: #45603046;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+.carousel-button i {
+    font-size: 1.5rem;
+}
+
+.user-feedback .simple-flexbox-btw {
+    margin: 0 auto;
+    width: 70%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.written-feedback {
+    width: 45%;
+}
+
+.written-feedback p {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.user-feedback img {
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+.user-feedback i {
+    font-size: 2rem;
+    color: #567741;
+}
+
+.final-prototype {
+    padding: 2rem 0 6rem;
+}
+
+.test-button {
+    display: block;
+    background-color: white;
+    color: #567741;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 4rem auto;
+    transition: all 0.3s ease;
+    border: 2px solid #567741;
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.test-button:hover {
+    background-color: #56774149;
+    color: #567741;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.final-prototype-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
