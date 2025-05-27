@@ -26,6 +26,7 @@ outline: 2px solid red;
 }
 
 .emmas {
+    padding-top: 1rem;
     transform: translateX(-5rem);
 }
 
@@ -130,6 +131,10 @@ outline: 2px solid red;
     color: inherit;
 }
 
+.matcha-2 {
+    display: none;
+}
+
 .matcha-wrapper {
     position: relative;
     display: flex;
@@ -209,6 +214,72 @@ outline: 2px solid red;
     font-size: 1.5rem;
     box-shadow: 0 2px 8px 0 #0000002c;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    .emmas {
+        margin-top: 4rem;
+        transform: translateX(-1.75rem);
+    }
+    .mayhem {
+        transform: translateX(1.75rem);
+    }
+    
+    .hero-pill span {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .matcha-2 {
+        display: block;
+    }
+
+    .matcha-1 {
+        display: none;
+    }
+
+    .cow-joke h1 {
+        line-height: 5rem;
+    }
+
+    .feat-proj .simple-flexbox {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .feat-proj .left-header {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 1rem;
+    }   
+
+    .feat-proj .right-cards {
+        margin-top: 0;
+        width: 100%;
+        padding: 0rem 0.5rem;
+    }
+
+    .feat-proj .right-cards .proj-card {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .feat-proj h2 {
+        font-size: 3rem;
+        text-align: center;
+        transform: translateX(-2rem);
+    }
+    
+    .feat-proj h1 {
+        font-size: 5rem;
+        text-align: center;
+        margin-left: 0;
+        transform: translateX(2rem);
+    }
 }
 
 

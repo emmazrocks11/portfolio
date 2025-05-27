@@ -44,58 +44,47 @@ gsap.to(".nav-divider", {
     }
 });
 
-// PROJECT CARDS Left and Right
-ScrollTrigger.create({
-    trigger: ".feat-proj",
-    start: "top top",
-    end: "bottom bottom",
-    pin: ".left-header",
-    pinSpacing: false,
-    scrub: false
-});
-
 
 
 // CIRCULAR TEXT
 
 document.addEventListener('DOMContentLoaded', () => {
-    const circularText = document.querySelector('.circular-text');
-    if (!circularText) return;
+    const circularTexts = document.querySelectorAll('.circular-text');
+    if (!circularTexts.length) return;
 
-    // Helper to add spaces between each letter
     function addSpaces(str, n = 1) {
         return str.split('').join(' '.repeat(n));
     }
 
-    // Phrase and repetition
-    const phrase = addSpaces('   h o v e r    o v e r    m e   ', 1); // 1 space between each letter
+    let phrase;
+    if (window.innerWidth < 400) {
+        phrase = addSpaces('   c l i c k    o n    m e   ', 1);
+    } else {
+        phrase = addSpaces('   h o v e r    o v e r    m e   ', 1);
+    }
     const repeatCount = 2;
     const separator = ' • ';
-    // Add separator after every phrase, including the last
     let text = '';
     for (let i = 0; i < repeatCount; i++) {
         text += phrase + separator;
     }
-    // Remove any previous content
-    circularText.innerHTML = '';
 
-    // Parameters
-    const radius = 5.5; // rem, adjust for your matcha size
+    const radius = 5.5;
     const totalLetters = text.length;
-    const spacingFactor = 1.5; // Added for the new angle calculation
 
-    // Create letters in a circle
-    for (let i = 0; i < totalLetters; i++) {
-        const letter = document.createElement('span');
-        letter.textContent = text[i];
-        letter.style.position = 'absolute';
-        letter.style.top = '50%';
-        letter.style.left = '50%';
-        // Calculate angle for this letter
-        const angle = (i / totalLetters) * 360;
-        letter.style.transform = `translate(-50%, -50%) rotate(${angle}deg) translateY(-${radius}rem)`;
-        circularText.appendChild(letter);
-    }
+    circularTexts.forEach(circularText => {
+        circularText.innerHTML = '';
+        for (let i = 0; i < totalLetters; i++) {
+            const letter = document.createElement('span');
+            letter.textContent = text[i];
+            letter.style.position = 'absolute';
+            letter.style.top = '50%';
+            letter.style.left = '50%';
+            const angle = (i / totalLetters) * 360;
+            letter.style.transform = `translate(-50%, -50%) rotate(${angle}deg) translateY(-${radius}rem)`;
+            circularText.appendChild(letter);
+        }
+    });
 
     // Animate rotation
     let rotation = 0;
@@ -105,29 +94,47 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: 'none',
         onUpdate: function() {
             rotation -= 0.5;
-            circularText.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+            circularTexts.forEach(circularText => {
+                circularText.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+            });
         }
     });
 
     // Add hover effect for matcha wrapper
-    const matchaWrapper = document.querySelector('.matcha-wrapper');
-    const matchaText = document.querySelector('.matcha-text');
+    const matchaWrappers = document.querySelectorAll('.matcha-wrapper');
+    const matchaTexts = document.querySelectorAll('.matcha-text');
+    
+    
+    matchaWrappers.forEach((matchaWrapper, index) => {
+        matchaWrapper.addEventListener('mouseenter', () => {
+            gsap.to(circularTexts[index], {
+                x: '-15%',
+                duration: 0.5,
+                ease: 'power2.out'
+            });
+        });
 
-    matchaWrapper.addEventListener('mouseenter', () => {
-        gsap.to(circularText, {
-            x: '-15%',
-            duration: 0.5,
-            ease: 'power2.out'
+        matchaWrapper.addEventListener('mouseleave', () => {
+            gsap.to(circularTexts[index], {
+                x: '0%',
+                duration: 0.5,
+                ease: 'power2.out'
+            });
         });
     });
 
-    matchaWrapper.addEventListener('mouseleave', () => {
-        gsap.to(circularText, {
-            x: '0%',
-            duration: 0.5,
-            ease: 'power2.out'
+    if (window.innerWidth > 400) {
+        // PROJECT CARDS Left and Right
+        ScrollTrigger.create({
+            
+        trigger: ".feat-proj",
+        start: "top top",
+        end: "bottom bottom",
+        pin: ".left-header",
+        pinSpacing: false,
+        scrub: false
         });
-    });
+    }
 });
 
 // CIRCULAR TExT COLOR
