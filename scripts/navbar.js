@@ -26,9 +26,34 @@ ScrollTrigger.create({
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.navbar ul');
+    let isMenuOpen = false;
   
     hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+        isMenuOpen = !isMenuOpen;
+        
+        if (isMenuOpen) {
+            navLinks.style.display = 'flex';
+            gsap.to(navLinks, {
+                y: 0,
+                opacity: 1,
+                duration: 0.3,
+                ease: "power2.out",
+                onComplete: () => {
+                    navLinks.classList.add('active');
+                }
+            });
+        } else {
+            gsap.to(navLinks, {
+                y: -100,
+                opacity: 0,
+                duration: 0.3,
+                ease: "power2.in",
+                onComplete: () => {
+                    navLinks.classList.remove('active');
+                    navLinks.style.display = 'none';
+                }
+            });
+        }
     });
 });
 

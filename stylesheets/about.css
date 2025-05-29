@@ -142,12 +142,93 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 400px) {
+
+    .hero-about .left-header h5 {
+        font-size: 3rem;
+        transform: translateX(1rem);
+    }
+
+    .hero-about .left-header h1 {
+        font-size: 5rem;
+        transform: translateX(-1.5rem);
+        line-height: 1rem;
+    }
+    
+    .hero-about .flexbox-center img {
+        width: 4rem;
+        transform: translateY(-3.2rem);
+    }
+
+    .hero-about .welcome-about h4 {
+        font-size: 1.5rem;
+        transform: translateX(-2rem) translateY(-1rem);
+    }
+
     .ethos-div h4 {
         font-size: 1.8rem;
     }
 
-   p {
-        font-size: 0.8rem;
+    p {
+        font-size: 1rem;
+    }
+
+    .about-me .flexbox-center {
+        flex-direction: column;
+    }
+
+    .about-me img {
+        width: 70%;
+        margin-right: 0;
+    }
+
+    .about-me-text {
+        width: 90%;
+    }
+
+    .design-ethos-header {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .design-ethos-header h1 {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+
+    .design-ethos .simple-flexbox-btw {
+        margin: 0 auto;
+        width: 99%;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2.5rem;
+        padding: 5rem 1rem 2rem;
+    }
+
+    .design-ethos .ethos-div {
+        width: 100%;
+    }
+
+    .design-favourites h4 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .design-favourites .favourites-flexbox {
+        flex-wrap: wrap;
+    }
+
+    .design-favourites .favourites-box {
+        padding: 0.5rem;
+        width: 48%;
+    }
+
+    .design-favourites .favourites-box p {
+        text-align: left;
+    }
+
+    .design-favourites .favourites-box img {
+        margin: 1rem auto;
     }
 }

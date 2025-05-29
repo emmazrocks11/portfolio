@@ -107,11 +107,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     matchaWrappers.forEach((matchaWrapper, index) => {
         matchaWrapper.addEventListener('mouseenter', () => {
-            gsap.to(circularTexts[index], {
-                x: '-15%',
-                duration: 0.5,
-                ease: 'power2.out'
-            });
+            if (window.innerWidth < 400) {
+                gsap.to(circularTexts[index], {
+                    x: '-25%',
+                    duration: 0.5,
+                    ease: 'power2.out'
+                });
+            } else {
+                gsap.to(circularTexts[index], {
+                    x: '-15%',
+                    duration: 0.5,
+                    ease: 'power2.out'
+                });
+            }
         });
 
         matchaWrapper.addEventListener('mouseleave', () => {

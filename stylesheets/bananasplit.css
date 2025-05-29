@@ -24,6 +24,12 @@
     margin-top: 6rem;
 }
 
+.left-img {
+    display: none;
+    padding-left: 4rem;
+    width: 100%;
+}
+
 .left-text {
     text-align: left;
     width: 40%;
@@ -518,11 +524,11 @@ td ul li {
 }
 
 .carousel-button.prev {
-    left: 1rem;
+    left: 0;
 }
 
 .carousel-button.next {
-    right: 1rem;
+    right: 0;
 }
 
 .carousel-button i {
@@ -587,4 +593,215 @@ td ul li {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+}
+
+.sketch-mobile {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .hero-banana h3 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .hero-banana h4 {
+        font-size: 2rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+    }
+
+    .hero-banana .simple-flexbox {
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .hero-banana .left-text {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .hero-banana .left-text .decorative-bar {
+        width: 100%;
+    }
+
+    .hero-banana .right-img {
+        display: none;
+    }
+
+    .hero-banana .left-img {
+        display: block;
+        padding-left: 0;
+    }
+
+    .hero-banana .left-img img {
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .hero-banana .left-text a {
+        width: 100%;
+    }
+    
+    .background-info h1, .research h1, .design-process h1, .user-testing h1, .final-prototype h1 {
+        font-size: 2.9rem;
+    }
+
+    .background-info h4, .problem-statement h4, .research h4, .design-process h4 {
+        font-size: 2rem;
+    }
+
+    .background-info .simple-flexbox-btw .header-left {
+        width: 45%
+    }
+
+    .background-info .simple-flexbox-btw .vertical-divider-left {
+        width: 55%;
+    }
+
+    .research .simple-flexbox-btw .header-left {
+        width: 38%
+    }
+
+    .research .simple-flexbox-btw .vertical-divider-left {
+        width: 62%;
+    }
+
+    .research .affinity-diagram {
+        padding: 1rem;
+    }
+
+    .interview-takeaways .simple-flexbox-btw {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .interview-takeaways .takeaway-card {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    table {
+        width: 290%; /* allows it to expand horizontally */
+        scroll-snap-align: start;
+    }
+
+    .sketches .simple-flexbox-btw {
+        display: none;
+    }
+    
+    .sketch-mobile {
+        display: flex;
+        gap: 1rem; /* space between images */
+        margin: 2rem 0 7rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+      
+    .sketch-mobile img {
+        height: 15rem;
+        border-radius: 0.5rem;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+
+    .eg-div {
+        margin-bottom: 2rem;
+    }
+    
+    .comp-issue-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .comp-issue-flex p {
+        width: 100%;
+    }
+    
+    .comp-issue-flex img {
+        width: 60%;
+    }
+
+    .banana-name {
+        font-size: 1.5rem;
+        width: 67%;
+    }
+    
+    .ui-screens {
+        padding: 1rem;
+    }
+
+    .ui-screens .simple-flexbox-btw img {
+        width: 32%;
+    }
+    
+    .user-testing .presentation-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .user-testing .presentation-container h4 {
+        font-size: 1.8rem;
+    }
+    
+    .user-testing a::after {
+        width: 40%;
+        padding: 0.5rem 1.25rem;
+    }
+    
+    .user-testing a:hover::after {
+        opacity: 1;
+    }
+    
+    .carousel-container .carousel-slide{
+        padding: 0;
+    }
+
+    .carousel-slide .simple-flexbox-btw {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+        width: 80%;
+    }
+
+    .carousel-slide .written-feedback {
+        width: 100%;
+    }
+
+    .written-feedback p {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .carousel-slide .simple-flexbox-btw img {
+        width: 80%;
+    }
+    
+    .carousel-slide .simple-flexbox-btw i {
+        display: none;
+    }
+
+    .carousel-container .carousel-button {
+        top: 40%;
+    }
+
+    .final-prototype a {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
 }

@@ -229,9 +229,11 @@ outline: 2px solid red;
         transform: translateX(1.75rem);
     }
     
-    .hero-pill span {
+    .hero .hero-pill {
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
         font-size: 1rem;
-        line-height: 1rem;
+        line-height: 1.3rem;
     }
 
     .matcha-2 {
@@ -242,8 +244,29 @@ outline: 2px solid red;
         display: none;
     }
 
+    .matcha-wrapper:hover {
+        transform: translateX(-20%);
+    }
+
+    .matcha-text {
+        width: 50%;
+        left: 77%;
+    }
+
+    .matcha-text p {
+        font-size: 1rem;
+    }
+
     .cow-joke h1 {
         line-height: 5rem;
+    }
+
+    .feat-proj {
+        padding-top: 1rem;
+    }
+
+    .feat-proj h1 {
+        font-size: 5rem;
     }
 
     .feat-proj .simple-flexbox {
@@ -271,7 +294,7 @@ outline: 2px solid red;
     .feat-proj h2 {
         font-size: 3rem;
         text-align: center;
-        transform: translateX(-2rem);
+        transform: translateX(-3rem);
     }
     
     .feat-proj h1 {

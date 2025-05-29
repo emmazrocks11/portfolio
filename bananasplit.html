@@ -25,6 +25,7 @@
                 <li><a href="assets/Emma_Zhang_UW_Resume.pdf" target="_blank">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="hamburger"><i class="ti ti-menu-2"></i></button>
         </nav>
         <div class="content-container-divider">
             <hr class="nav-divider">
@@ -37,6 +38,9 @@
             <h4><i>high fidelity prototype of</i></h4>
             <h3>BananaSplit</h3>
             <div class="simple-flexbox header-under">
+                <div class="left-img">
+                    <img src="assets/bananasplit-cover.png" alt="bananasplit mockup">
+                </div>
                 <div class="left-text">
                     <div class="decorative-bar">January 2025 || UI/UX Design</div>
                     <p class="text-item-bold">ROLE</p>
@@ -167,133 +171,135 @@
             <h4 class="btw-header-p">a) Tentative requirements: <i>Must, Should, Could, Won't</i></h4>
             <p>Before my team and I split off to sketch ideas like crazy, we sat down and listed out some tentative requirements. By utilizing the <i class="emphasize">MoSCoW framework</i>, we were able to set ourselves up on the same page before branching out.</p>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                    <th>Priority</th>
-                    <th colspan="4">Feature Category & Requirements</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- MUST -->
-                    <tr>
-                        <td class="green-must">Must</td>
-                        <td class="gray-must">
-                            <p class="emphasize">Location-based results</p>
-                            <ul>
-                                <li>    
-                                    User can implement their current location
-                                </li>
-                                <li>
-                                    Stores and deals must be shown relative to the user's location
-                                </li>
-                                <li>
-                                    Distance between user and the store must be shown clearly with an address and measurement
-                                </li>
-                            </ul>
-                        </td>
+            <div class="table-wrapper">
+                <table border="1">
+                    <thead>
+                        <tr>
+                        <th>Priority</th>
+                        <th colspan="4">Feature Category & Requirements</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- MUST -->
+                        <tr>
+                            <td class="green-must">Must</td>
+                            <td class="gray-must">
+                                <p class="emphasize">Location-based results</p>
+                                <ul>
+                                    <li>    
+                                        User can implement their current location
+                                    </li>
+                                    <li>
+                                        Stores and deals must be shown relative to the user's location
+                                    </li>
+                                    <li>
+                                        Distance between user and the store must be shown clearly with an address and measurement
+                                    </li>
+                                </ul>
+                            </td>
 
-                        <td class="gray-must">
-                            <p class="emphasize">Flyer Deals</p>
-                            <ul>
-                                <li>    
-                                    Prices and discounts must be visible for each grocery product
-                                </li>
-                                <li>
-                                    Valid-until dates
-                                </li>
-                            </ul>
-                        </td>
+                            <td class="gray-must">
+                                <p class="emphasize">Flyer Deals</p>
+                                <ul>
+                                    <li>    
+                                        Prices and discounts must be visible for each grocery product
+                                    </li>
+                                    <li>
+                                        Valid-until dates
+                                    </li>
+                                </ul>
+                            </td>
 
-                        <td class="gray-must">
-                            <p class="emphasize">Search and Filtering</p>
-                            <ul>
-                                <li>    
-                                    Users can search up specific products, brands, and stores
-                                </li>
-                                <li>
-                                    Users can filter different grocery categories: product, meat, sauces, bakery etc
-                                </li>
-                                <li>
-                                    Users can sort prices from high to low, and vice versa
-                                </li>
-                            </ul>   
-                        </td>
+                            <td class="gray-must">
+                                <p class="emphasize">Search and Filtering</p>
+                                <ul>
+                                    <li>    
+                                        Users can search up specific products, brands, and stores
+                                    </li>
+                                    <li>
+                                        Users can filter different grocery categories: product, meat, sauces, bakery etc
+                                    </li>
+                                    <li>
+                                        Users can sort prices from high to low, and vice versa
+                                    </li>
+                                </ul>   
+                            </td>
 
-                        <td class="gray-must">
-                            <p class="emphasize">Price Comparison</p>
-                            <ul>
-                                <li>    
-                                    Users can see different deals and prices from different stores regarding the same product
-                                </li>
-                            </ul>   
-                        </td>
-                    </tr>
+                            <td class="gray-must">
+                                <p class="emphasize">Price Comparison</p>
+                                <ul>
+                                    <li>    
+                                        Users can see different deals and prices from different stores regarding the same product
+                                    </li>
+                                </ul>   
+                            </td>
+                        </tr>
 
-                    <!-- SHOULD -->
-                    <tr>
-                        <td class="green-should">Should</td>
-                        <td class="gray-should">
-                            <p class="emphasize">Saved Preferences</p>
-                            <ul>
-                                <li>    
-                                    Save frequently purchased products
-                                </li>
-                                <li>
-                                    Remember past orders and quick reorder buttons
-                                </li>
-                            </ul>
-                        </td>
+                        <!-- SHOULD -->
+                        <tr>
+                            <td class="green-should">Should</td>
+                            <td class="gray-should">
+                                <p class="emphasize">Saved Preferences</p>
+                                <ul>
+                                    <li>    
+                                        Save frequently purchased products
+                                    </li>
+                                    <li>
+                                        Remember past orders and quick reorder buttons
+                                    </li>
+                                </ul>
+                            </td>
 
-                        <td class="gray-should">
-                            <p class="emphasize">Product Descriptions</p>
-                            <ul>
-                                <li>    
-                                    High Quality product photos
-                                </li>
-                                <li>
-                                    Images of nutrition facts, ingredient lists, and other product descriptions
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="gray-should"></td>
-                        <td class="gray-should"></td>
-                    </tr>
+                            <td class="gray-should">
+                                <p class="emphasize">Product Descriptions</p>
+                                <ul>
+                                    <li>    
+                                        High Quality product photos
+                                    </li>
+                                    <li>
+                                        Images of nutrition facts, ingredient lists, and other product descriptions
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="gray-should"></td>
+                            <td class="gray-should"></td>
+                        </tr>
 
-                    <!-- COULD -->
-                    <tr>
-                        <td class="green-could">Could</td>
-                        <td class="gray-could">
-                            <p class="emphasize">Recipes</p>
-                            <ul>
-                                <li>    
-                                    Users can add their own recipes for quick access to ingredients
-                                </li>
-                                <li>
-                                    Application can suggest different recipes with grocery items that are on sale
-                                </li>
-                                <li>
-                                    Application can suggest recipes that are similar to what the user knows
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="gray-could" ></td>
-                        <td class="gray-could"></td>
-                        <td class="gray-could"></td>
-                    </tr>
+                        <!-- COULD -->
+                        <tr>
+                            <td class="green-could">Could</td>
+                            <td class="gray-could">
+                                <p class="emphasize">Recipes</p>
+                                <ul>
+                                    <li>    
+                                        Users can add their own recipes for quick access to ingredients
+                                    </li>
+                                    <li>
+                                        Application can suggest different recipes with grocery items that are on sale
+                                    </li>
+                                    <li>
+                                        Application can suggest recipes that are similar to what the user knows
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="gray-could" ></td>
+                            <td class="gray-could"></td>
+                            <td class="gray-could"></td>
+                        </tr>
 
-                    <!-- WON'T -->
-                    <tr>
-                        <td class="green-wont">Won't</td>
-                        <td>
-                            <p class="emphasize">Health and Nutrition Suggestions</p>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+                        <!-- WON'T -->
+                        <tr>
+                            <td class="green-wont">Won't</td>
+                            <td>
+                                <p class="emphasize">Health and Nutrition Suggestions</p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <!-- SKETCHES-->
             <h4 class="btw-header-p">b) Sketching, sketching, and more sketching</h4>
@@ -317,6 +323,15 @@
                         <img src="assets/ban-sketch-6.jpg" alt="BananaSplit sketch 6">
                     </div>
                     
+                </div>
+                <div class="sketch-mobile">
+                    <img src="assets/ban-sketch-2.jpg" alt="BananaSplit Sketch 2" class="img-rounded">
+                    <img src="assets/ban-sketch-3.jpg" alt="BananaSplit sketch 3" class="sketch-img">
+                    <img src="assets/ban-sketch-4.jpg" alt="BananaSplit sketch 4" class="sketch-img">
+                    <img src="assets/ban-sketch-5.jpg" alt="BananaSplit sketch 5" class="sketch-img">
+                    <img src="assets/ban-sketch-1.jpg" alt="BananaSplit sketch 1" class="sketch-img">
+                    <img src="assets/ban-sketch-1.jpg" alt="BananaSplit sketch 1">
+                    <img src="assets/ban-sketch-6.jpg" alt="BananaSplit sketch 6">
                 </div>
             </div>
 

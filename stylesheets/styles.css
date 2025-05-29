@@ -86,6 +86,7 @@ p {
     background-color: transparent;
     border: none;
     font-size: 2rem;
+    color: black;
 }
 
 .navbar ul {
@@ -283,7 +284,8 @@ footer nav ul li a:hover::before {
     }
 
     .navbar ul {
-        margin-top: 0.5rem;
+        z-index: 900;
+        margin-top: 0.7rem;
         display: none;
         flex-direction: column;
         background: white;
@@ -293,16 +295,24 @@ footer nav ul li a:hover::before {
         right: 0;
         padding: 0 1rem;
         gap: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0s linear 0.3s;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0s linear 0s;
     }
 
     .navbar ul li {
         padding: 1rem 0;
         text-align: center;
         border-bottom: 1.5px solid #F9BBBC;
-    }
-
-    .navbar ul.active {
-        display: flex;
     }
 
     footer .welcome h4 {

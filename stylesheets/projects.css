@@ -77,3 +77,23 @@ body {
     color: inherit;
     width: 47%;
 }
+
+@media (max-width: 400px) {
+    .proj-heading h1 {
+        font-size: 5rem;
+    }
+
+    .proj-content .simple-flexbox-btw {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%
+    }
+
+    .proj-content .simple-flexbox-btw a {
+        width: 100%;
+    }
+
+    .proj-content .simple-flexbox-btw .proj-card {
+        margin-bottom: 0;
+    }
+}
